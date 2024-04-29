@@ -27,9 +27,9 @@ class MethodChannelAutoStart extends AutoStartPlatform {
   }
 
   @override
-  Future<bool?> get isAutoStartAvailable async {
-    final bool? isAutoStartAvailable =
-    await methodChannel.invokeMethod('isAutoStartPermission');
+  Future<bool> get isAutoStartAvailable async {
+    final bool isAutoStartAvailable =
+    await methodChannel.invokeMethod('isAutoStartPermission') ?? false;
     return isAutoStartAvailable;
   }
 }

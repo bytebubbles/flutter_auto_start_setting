@@ -10,7 +10,7 @@ class AutoStart {
     return AutoStartPlatform.instance.toAutoStartSetting();
   }
 
-  static Future<bool?> get isAutoStartAvailable async {
+  static Future<bool> get isAutoStartAvailable async {
     return AutoStartPlatform.instance.isAutoStartAvailable;
   }
 }

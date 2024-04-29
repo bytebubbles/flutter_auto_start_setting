@@ -31,7 +31,7 @@ abstract class AutoStartPlatform extends PlatformInterface {
     throw UnimplementedError('toAutoStartSetting() has not been implemented.');
   }
 
-  Future<bool?> get isAutoStartAvailable async {
+  Future<bool> get isAutoStartAvailable async {
     throw UnimplementedError('isAutoStartAvailable() has not been implemented.');
   }
 }
